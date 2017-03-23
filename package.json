@@ -1,0 +1,19 @@
+{
+  "name": "js_20170130",
+  "version": "0.1.0",
+  "description": "simple project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burlakilia/js_20170130.git"
+  },
+  "author": "Burlak Ilia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burlakilia/js_20170130/issues"
+  },
+  "homepage": "https://github.com/burlakilia/js_20170130#readme"
+}
