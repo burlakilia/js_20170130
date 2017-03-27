@@ -1,0 +1,15 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <div class="app">
+        <div class="app__sidebar">
+            <div class="app__logo">
+                <img class="app__title" src="img/logo_text.svg"/>
+                <img class="app__icon" src="img/logo_mark.svg"/>
+            </div>
+            <hr class="app__hr"/>
+            <div class="app__menu js-menu"></div>
+            <div class="app__form js-menu-form"></div>
+            <hr class="app__hr"/>
+        </div>
+        <div class="app__notes js-notes"></div>
+    </div>
+</fest:template>

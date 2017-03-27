@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/libs/pure.css"/>
+    <link rel="stylesheet" href="src/blocks/login/login.css"/>
+
+    <style>
+        .template {
+            display: none;
+        }
+    </style>
+
+    <script src="src/blocks/login/login.js"></script>
+</head>
+<body>
+    <div class="template login">
+
+            <form class="login pure-form pure-form-stacked">
+                <input id="login" type="text" placeholder="Login"/>
+                <input id="password" type="password" placeholder="Password"/>
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+            </form>
+
+    </div>
+
+    <div class="view js-view-login"></div>
+
+    <script type="text/javascript">
+        let loginView = new Login(document.querySelector('.js-view-login'));
+
+        loginView.render();
+    </script>
+</body>
+</html>
