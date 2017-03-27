@@ -5,32 +5,15 @@
     <title></title>
     <link rel="stylesheet" href="libs/pure.css"/>
 
-    <script src="src/blocks/login/login.js" ></script>
-    <style>
-        .template {
-            display: none;
-        }
-    </style>
+    <script src="src/blocks/login/login.fest.js"></script>
+    <script src="src/blocks/signup/signup.fest.js"></script>
+    <script src="public/app.js" ></script>
 </head>
 <body>
-    <div class="template template-login">
-        <form class="pure-form pure-form-stacked">
-            <input type="text" name="login"/>
-            <input type="password" name="password">
-        </form>
-    </div>
-
+    <h1>Login</h1>
     <div class="view js-login-view"></div>
 
-    <script>
-
-      (function () {
-        const login = new Login(document.querySelector('.js-login-view'));
-        login.render();
-      })();
-
-
-    </script>
-
+    <h1>Singup</h1>
+    <div class="view js-signup-view"></div>
 </body>
 </html>

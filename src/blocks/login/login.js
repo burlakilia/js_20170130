@@ -1,20 +1,19 @@
-(function (doc) {
+const temaplte = window.fest['src/blocks/login/login'];
 
-  class Login {
+export default class Login {
 
-    constructor(node) {
-      this.node = node;
-      this.template = document.querySelector('.template-login');
-    }
-
-    render() {
-      const form = this.template.cloneNode(true);
-      form.classList.toggle('template', false);
-
-      this.node.appendChild(form);
-    }
-
+  constructor(node) {
+    this.node = node;
+    this.render();
   }
 
-  window.Login = Login;
-})(document);
+  render() {
+    this.node.innerHTML = temaplte({
+      texts: {
+        login: 'Login',
+        password: 'Password'
+      }
+    });
+  }
+
+}

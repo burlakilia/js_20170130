@@ -1,0 +1,6 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+    <form class="pure-form pure-form-stacked">
+        <input type="text" name="login" placeholder="{json.texts.login}"/>
+        <input type="password" name="password" placeholder="{json.texts.password}"/>
+    </form>
+</fest:template>
