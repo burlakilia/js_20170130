@@ -1,4 +1,4 @@
-const temaplte = window.fest['src/blocks/login/login'];
+const template = window.fest['src/blocks/login/login'];
 
 export default class Login {
 
@@ -8,11 +8,11 @@ export default class Login {
   }
 
   render() {
-    this.node.innerHTML = temaplte({
+    this.node.innerHTML = template({
       texts: {
         login: 'Login',
-        password: 'Password'
-      }
+        password: 'Password',
+      },
     });
   }
 
