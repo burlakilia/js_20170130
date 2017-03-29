@@ -1,8 +1,10 @@
+var path = require('path');
+
 module.exports = {
   entry: './src/blocks/app/app.js',
 
   output: {
-    path: './public',
+    path: path.resolve(__dirname, 'public'),
     filename: 'app.js'
   },
 
