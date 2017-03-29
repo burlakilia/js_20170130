@@ -1,26 +1,25 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/blocks/app/app.js',
 
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'app.js'
+    filename: 'app.js',
   },
 
   module: {
 
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015']
-        }
-      }
-    ]
+    rules: [{
+      test: /\.js$/,
+      loader: 'babel-loader',
+      options: { presets: ['es2015'] },
 
-  }
+
+    }],
+
+  },
 
 
 };
