@@ -1,0 +1,40 @@
+.note {
+
+    margin: 20px;
+    width: 280px;
+    height: 180px;
+    text-align: center;
+}
+
+.note__header {
+	padding: 5px;
+	margin: 0px;
+	font-family: "Open Sans";
+
+
+    
+}
+.note__text {
+	
+	box-sizing: border-box;
+    width: 280px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    outline: 0;
+    border: 0;
+    z-index: 1;
+    border-radius: 3px;
+    padding: 10px;
+    resize: none;
+    background: none;
+       
+}
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

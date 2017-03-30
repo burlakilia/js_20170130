@@ -1,0 +1,6 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+      <div class="note {json.view.color}">
+            <h3 class="note__header" ><fest:value>json.texts.noteHeader</fest:value></h3>
+            <textarea class="note__text"><fest:value>json.texts.noteText</fest:value></textarea>
+       </div>
+</fest:template>
