@@ -1,6 +1,7 @@
 import Login from '../login/login';
 import Signup from '../signup/signup';
 import Note from '../note/note';
+import NotesList from '../notesList/notesList';
 
 const data = [{
   header: 'Заметка 1',
@@ -16,7 +17,7 @@ const data = [{
 document.addEventListener('DOMContentLoaded', () => {
   const login = new Login(document.querySelector('.js-login-view'));
   const signup = new Signup(document.querySelector('.js-signup-view'));
-
+  const notesList = new NotesList(document.querySelector('.js-notes-list'), data);
 
   data.forEach((element) => {
     const note = new Note({

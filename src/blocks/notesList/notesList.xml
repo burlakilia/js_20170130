@@ -1,0 +1,9 @@
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+      <ul>
+            <fest:for iterate="json" index="i" value="v">
+                  <li>
+                        <fest:value>v.header</fest:value>
+                  </li>
+            </fest:for>
+      </ul>
+</fest:template>
