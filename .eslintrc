@@ -2,6 +2,11 @@
 // Copy this file, and add rule overrides as needed.
 {
   "extends": "airbnb",
+  rules": {
+    "comma-dangle": ["error", "never"],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "no-console": 0
+  },
   "env": {
     "browser": true,
     "node": true

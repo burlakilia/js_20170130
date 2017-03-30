@@ -2,3 +2,4 @@ node_modules
 .idea
 **/*.fest.js
 public
+**/*.xml.js

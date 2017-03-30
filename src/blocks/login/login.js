@@ -1,5 +1,4 @@
-const template = window.fest['src/blocks/login/login'];
-
+import template from './login.xml.js';
 export default class Login {
 
   constructor(node) {

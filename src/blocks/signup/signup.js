@@ -1,4 +1,4 @@
-const template = window.fest['src/blocks/signup/signup'];
+import template from './signup.xml.js';
 
 export default class Signup {
 
@@ -12,8 +12,8 @@ export default class Signup {
       texts: {
         login: 'Login',
         password: 'Password',
-        email: 'Email'
-      }
+        email: 'Email',
+      },
     });
   }
 
