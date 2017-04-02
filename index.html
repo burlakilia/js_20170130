@@ -2,26 +2,46 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <title></title>
-      <link rel="stylesheet" href="libs/pure.css" /> 
-      <link rel="stylesheet" href="libs/app.css" />
-      <script src="public/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="libs/pure.css"/>
+    <link rel="stylesheet" href="libs/app.css"/>
+    <script src="public/app.js"></script>
 </head>
 
 <body>
-      <h1>Login</h1>
-      <div class="view js-login-view"></div>
+<header id="header" class="header">
+    <div class="container header__i">
+        <span class="header-logo"> Learn JS</span>
+        <div class="container header-links">
+            <!--<a class="header-links__item js-login-link" href="javascript:void(0)">Login</a>-->
+            <!--<a class="header-links__item js-signup-link" href="javascript:void(0)">Sign up</a>-->
+        </div>
+    </div>
+</header>
 
-      <h1>Singup</h1>
-      <div class="view js-signup-view"></div>
+<div class="container">
+    <div class="pure-g js-forms">
+        <div class="pure-u-1-2">
+            <div class="l-box">
+                <div class="view js-login-view"></div>
+            </div>
+        </div>
 
-      <h1>Notes List</h1>
-      <div class="view js-notes-list"></div>
+        <div class="pure-u-1-2 sign-up-block">
+            <div class="l-box">
+                <div class="view js-signup-view"></div>
+            </div>
+        </div>
 
-      <h1>Notes</h1>
-      <div class="view js-note-view"></div>
+    </div>
+
+    <div class="view js-notes-list"></div>
+
+    <div class="view js-note-view"></div>
+
+</div>
 
 </body>
-
 </html>
