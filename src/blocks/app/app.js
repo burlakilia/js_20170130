@@ -1,4 +1,5 @@
 import Login from '../login/login';
+import Logout from '../logout/logout';
 import Signup from '../signup/signup';
 import Note from '../note/note';
 import NotesList from '../notesList/notesList';
@@ -34,12 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const login = new Login(document.querySelector('.js-login-view'));
         const signup = new Signup(document.querySelector('.js-signup-view'));
     } else {
+        const logout = new Logout(document.querySelector('.js-logout-view'));
         initNotesList();
     }
 
     document.body.addEventListener('user.login', () => {
         document.querySelector('.js-login-view').innerHTML = '';
         document.querySelector('.js-signup-view').innerHTML = '';
+
+        const logout = new Logout(document.querySelector('.js-logout-view'));
         initNotesList();
     });
 });
