@@ -4,6 +4,8 @@ import Signup from '../signup/signup';
 import Note from '../note/note';
 import NotesList from '../notesList/notesList';
 import Cookies from 'js-cookie';
+import Router from '../../modules/router';
+
 
 const data = [{
     header: 'Заметка 1',
@@ -29,21 +31,14 @@ function initNotesList() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const router = new Router(document.body);
     const user = Cookies.get('user');
 
-    if (!user) {
-        const login = new Login(document.querySelector('.js-login-view'));
-        const signup = new Signup(document.querySelector('.js-signup-view'));
-    } else {
-        const logout = new Logout(document.querySelector('.js-logout-view'));
-        initNotesList();
-    }
-
-    document.body.addEventListener('user.login', () => {
-        document.querySelector('.js-login-view').innerHTML = '';
-        document.querySelector('.js-signup-view').innerHTML = '';
-
-        const logout = new Logout(document.querySelector('.js-logout-view'));
-        initNotesList();
+    router.register('/signin', new Login(document.querySelector('.js-login-view')));
+    router.register('/signup', new Signup(document.querySelector('.js-signup-view')));
+    router.register('/notes/{type}', function (event) {
+        console.log(event.routeData.type);
     });
+
+    router.start();
 });

@@ -6,6 +6,7 @@ export default class Signup {
         this.render();
         this.cache();
         this.events();
+        this.node.hidden = true;
     }
 
     render() {
@@ -16,6 +17,14 @@ export default class Signup {
                 email: 'Email'
             }
         });
+    }
+
+    show() {
+        this.node.hidden = false;
+    }
+
+    hide() {
+        this.node.hidden = true;
     }
 
     cache() {
