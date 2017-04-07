@@ -5,7 +5,7 @@ import Note from '../note/note';
 import NotesList from '../notesList/notesList';
 import Cookies from 'js-cookie';
 import Router from '../../modules/router';
-
+import App from '../../react/components/App.jsx';
 
 const data = [{
     header: 'Заметка 1',
@@ -33,6 +33,8 @@ function initNotesList() {
 document.addEventListener('DOMContentLoaded', () => {
     const router = new Router(document.body);
     const user = Cookies.get('user');
+
+    App.inject(document.querySelector('.js-timer'));
 
     router.register('/signin', new Login(document.querySelector('.js-login-view')));
     router.register('/signup', new Signup(document.querySelector('.js-signup-view')));
